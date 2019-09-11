@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="recipeForm">
+            <div class="row">
+                <div class="col-xs-12 btn-toolbar">
+                    <button type = "submit" class="btn btn-success">Save</button> 
+                    <button type = "cancel" class="btn btn-danger">Cancel</button> 
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                    <div class="col-xs-12">
+                       <div class="form-group">
+                           <label for="name">Name</label>
+                           <input type="text" id="name" class="form-control" formControlName="name">
+                       </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-xs-12">
+                   <div class="form-group">
+                       <label for="imagepath">ImagePath</label>
+                       <input type="text" id="imagepath" class="form-control" formControlName="imagePath">
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                   <div class="img-responsive"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                   <div class="form-group">
+                       <label for="description">Description</label>
+                        <textarea type="text" name="description" id="description" class="form-control"
+                         cols="30" rows="6"></textarea>                       
+                   </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-xs-8">
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-xs-2" >
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-xs-2">
+                       <button class="btn btn-danger">X</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<p>recipe-edit works!</p>

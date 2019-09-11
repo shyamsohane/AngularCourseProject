@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="OnNewRecipeClick()">New Recipe</button>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <app-recipe-item *ngFor="let recipe of Recipes; let i=index" [recipeNumber]=i ></app-recipe-item>
+  </div>
+</div>
